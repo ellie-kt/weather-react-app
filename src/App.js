@@ -1,14 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Weather from "./Weather";
+import Footer from "./Footer";
+import "./Footer.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> Hi World!</h1>
-      </header>
+      <Weather />
+      <Footer />
     </div>
   );
 }
-
-export default App;
