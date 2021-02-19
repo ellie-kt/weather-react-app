@@ -82,10 +82,19 @@ li,
 .col {
   padding: 0;
   margin: 0px 0 10px 0;
+  margin-left: 30px;
 }
 
-.units {
+.units,
+a {
   margin-top: 60px;
+  padding: 2px;
+  color: #262627;
+  font-family: "Poppins", sans-serif;
+}
+.units,
+a:link {
+  text-decoration: none;
 }
 .city {
   margin-top: 10px;
