@@ -20,11 +20,10 @@ h4 {
   font-size: 35px;
 }
 
-.fa-cloud-sun {
-  font-size: 80px;
+.icon {
   color: #403e4d;
   position: relative;
-  top: 70px;
+  top: 40px;
 }
 .submit,
 .current-location {
@@ -38,7 +37,7 @@ h4 {
   margin-left: 20px;
   float: left;
 }
-.fa-cloud-sun,
+.icon,
 .chance {
   text-align: center;
   display: block;
@@ -46,7 +45,8 @@ h4 {
 
 .sunrise,
 .sunset,
-.col-1 {
+.col-1,
+.elements {
   color: #403e4d;
   font-size: smaller;
   padding-right: 0;
