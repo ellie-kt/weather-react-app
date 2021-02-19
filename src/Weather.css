@@ -45,25 +45,38 @@ h4 {
 
 .sunrise,
 .sunset,
-.col-1,
-.elements {
-  color: #403e4d;
+.col-1 {
+  color: #262627;
   font-size: smaller;
+  font-weight: bold;
   padding-right: 0;
   font-size: 12px;
   margin-bottom: 5px;
   position: relative;
-  top: 30px;
-  right: 20px;
+  text-align: left;
+  left: 30px;
 }
 
 .date,
 .time {
   font-size: 16px;
-  color: #403e4d;
+  font-weight: bolder;
+  color: #262627;
   position: relative;
   text-align: left;
   left: 30px;
+}
+
+li,
+.elements {
+  list-style-type: none;
+  color: #262627;
+  font-size: 12px;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  top: 25px;
+  right: 15px;
 }
 
 .col {

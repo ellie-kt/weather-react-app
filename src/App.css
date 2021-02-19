@@ -1,6 +1,5 @@
 .App {
   font-family: "Poppins", sans-serif;
-  text-align: center;
 }
 h1 {
   font-weight: bolder;
@@ -25,18 +24,4 @@ button {
 
 #open-source {
   font-family: monospace;
-}
-
-li,
-.elements {
-  list-style-type: none;
-  text-align: center;
-  padding-top: 0;
-  color: #303035;
-  font-size: 12px;
-  font-weight: 100;
-  line-height: 19px;
-}
-.elements {
-  margin-top: 15px;
 }
