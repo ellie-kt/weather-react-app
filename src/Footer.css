@@ -1,6 +1,10 @@
-.Footer {
+.footer {
   font-size: smaller;
   text-align: left;
-  font-family: monospace;
+
   margin-top: 20px;
+}
+.footer,
+a:link {
+  font-family: monospace;
 }

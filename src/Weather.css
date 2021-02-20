@@ -70,7 +70,7 @@ h4 {
 li,
 .elements {
   list-style-type: none;
-  color: #262627;
+  color: #ff521d;
   font-size: 12px;
   font-weight: bolder;
   text-align: center;
@@ -89,12 +89,13 @@ li,
 a {
   margin-top: 60px;
   padding: 2px;
-  color: #262627;
-  font-family: "Poppins", sans-serif;
+  color: #ff521d;
+  font-size: medium;
 }
 .units,
 a:link {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 .city {
   margin-top: 10px;

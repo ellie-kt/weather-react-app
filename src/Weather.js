@@ -61,7 +61,7 @@ export default function Weather() {
             </div>
 
             <div className="units">
-              <a href="/">℃ </a> |<a href="/">℉ </a>
+              <a href="/">°C </a> |<a href="/">°F </a>
             </div>
           </div>
           <div className="col">
