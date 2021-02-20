@@ -57,7 +57,7 @@ export default function Weather() {
               <h4>
                 Clouds
                 <br />
-                19℃
+                19°C
               </h4>
             </div>
 
