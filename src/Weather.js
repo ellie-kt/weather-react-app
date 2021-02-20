@@ -8,7 +8,8 @@ export default function Weather() {
         <div className="row">
           <div className="col">
             <div className="city" id="#city">
-              <h1>London</h1>
+              <h1>London
+              </h1>
             </div>
             <div className="row">
               <div className="col">
@@ -61,7 +62,7 @@ export default function Weather() {
             </div>
 
             <div className="units">
-              <a href="/">°C </a> |<a href="/">°F </a>
+              <a href="/">°C </a> |<a href="/"> °F </a>
             </div>
           </div>
           <div className="col">

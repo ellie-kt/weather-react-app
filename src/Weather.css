@@ -23,7 +23,7 @@ h4 {
 .icon {
   color: #403e4d;
   position: relative;
-  top: 40px;
+  top: 50px;
 }
 .submit,
 .current-location {
@@ -70,12 +70,12 @@ h4 {
 li,
 .elements {
   list-style-type: none;
-  color: #ff521d;
+  color: #262627;
   font-size: 12px;
   font-weight: bolder;
   text-align: center;
   position: relative;
-  top: 25px;
+  top: 30px;
   right: 15px;
 }
 
@@ -90,7 +90,8 @@ a {
   margin-top: 60px;
   padding: 2px;
   color: #ff521d;
-  font-size: medium;
+  font-size: 18px;
+  font-weight: bold;
 }
 .units,
 a:link {
