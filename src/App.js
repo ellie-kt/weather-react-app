@@ -13,11 +13,17 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <Search />
-      <City />
-      <Weather />
-      <Footer />
-    </div>
+        <Search />
+        <div className="row">
+          <div className="col">
+            <City />
+          </div>
+          <div className="col">
+            <Weather />
+          </div>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
