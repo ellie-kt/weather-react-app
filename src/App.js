@@ -20,7 +20,7 @@ export default function App() {
             <City />
           </div>
           <div className="col">
-            <Weather />
+            <Weather defaultCity="London"/>
           </div>
         </div>
         <Footer />
