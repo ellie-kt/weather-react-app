@@ -79,9 +79,10 @@ if (weatherData.ready) {
         <div className="chance">
           <h4 className="text-capitalize">
             {weatherData.description} 
+           
             <br />
             <strong> {Math.round(weatherData.temperature)}°C </strong>
-          </h4>
+           </h4>
         </div>
         <div className="units">
           <a href="/">°C </a> |<a href="/"> °F </a>
@@ -91,7 +92,7 @@ if (weatherData.ready) {
         <div className="icon">
           <ReactAnimatedWeather
             icon="PARTLY_CLOUDY_DAY"
-            color="#403e4d"
+            color="#555558"
             size={100}
             animate={true}
           />
