@@ -11,7 +11,7 @@
 h4 {
   margin-top: 5px;
   position: relative;
-  right: 30px;
+  right: 0;
   top: 25px;
   color: #403e4d;
   font-size: 35px;
@@ -78,7 +78,6 @@ li,
 
 .units {
   position: relative;
-  right: 63px;
 }
 
 .units,
