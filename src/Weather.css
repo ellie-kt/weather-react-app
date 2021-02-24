@@ -21,7 +21,7 @@ h4 {
   color: #403e4d;
   position: relative;
   top: 50px;
-  right: 35px;
+  right: 8px;
 }
 .submit,
 .current-location {
@@ -72,7 +72,7 @@ li,
   text-align: center;
   position: relative;
   top: 25px;
-  right: 14px;
+  right: 5px;
   padding: 0;
 }
 

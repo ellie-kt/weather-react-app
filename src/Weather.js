@@ -3,6 +3,7 @@ import "./Weather.css";
 import ReactAnimatedWeather from 'react-animated-weather';
 import axios from "axios";
 import FormatDate from "./FormatDate"
+import SunriseSunset from "./SunriseSunset";
 
 export default function Weather(props) {
 const [weatherData, setWeatherdata] = useState({ ready:false });
@@ -14,7 +15,9 @@ setWeatherdata({
   wind: response.data.wind.speed,
   humidity: response.data.main.humidity,
   description: response.data.weather[0].description,
-  date: new Date(response.data.dt * 1000)
+  date: new Date(response.data.dt * 1000),
+  sunrise: new Date(response.data.sys.sunrise *1000),
+  sunset: new Date (response.data.sys.sunset * 1000),
 })
 }
 
@@ -39,7 +42,7 @@ if (weatherData.ready) {
             <div className="row">
               <div className="col - 1">
                 <div className="sunrise">
-                  <svg
+                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -49,10 +52,12 @@ if (weatherData.ready) {
                   >
                     <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z" />
                   </svg>{" "}
-                  <span className="sunrise-time">07:17</span>
-                </div>
-                <div className="sunset">
-                  <svg
+                  <span className="sunrise-time"> 
+                   <SunriseSunset date={weatherData.sunrise}/>
+                   </span>
+                   </div>
+                 <div className="sunset">
+                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -62,8 +67,11 @@ if (weatherData.ready) {
                   >
                     <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z" />
                   </svg>{" "}
-                  <span className="sunset-time">16:11</span>
-                </div>
+                  <span className="sunset-time">
+                  <SunriseSunset date={weatherData.sunset}/>
+                  </span>
+                  </div>
+                  
               </div>
             </div>
           </div>
