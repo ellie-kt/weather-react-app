@@ -6,8 +6,7 @@
   max-width: 650px;
   font-family: "Poppins", sans-serif;
 }
-​ .Weather {
-}
+
 ​ .chance,
 h4 {
   margin-top: 5px;
@@ -51,16 +50,15 @@ h4 {
   text-align: left;
   left: 30px;
 }
-​ .date,
+​.date,
 .time {
   font-size: 16px;
   font-weight: bolder;
   color: #262627;
-  position: relative;
   text-align: left;
-  left: 30px;
 }
-​ li,
+​ul,
+li,
 .elements {
   list-style-type: none;
   color: #262627;
@@ -71,9 +69,8 @@ h4 {
   top: 30px;
   right: 15px;
 }
-​ .col {
-}
-​ .units,
+
+​.units,
 a {
   margin-top: 60px;
   padding: 2px;

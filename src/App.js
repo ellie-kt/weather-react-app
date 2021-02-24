@@ -1,11 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
 import Weather from "./Weather";
 import Footer from "./Footer";
-import "./Footer.css";
-import "./Weather.css"
 import Search from './Search';
 import City from './City'
+import './App.css';
+import "./Footer.css";
+import "./Weather.css";
+
+
 
 
 

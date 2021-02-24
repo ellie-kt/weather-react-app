@@ -15,8 +15,7 @@ export default function City() {
                 <div className="date">
                   <strong> 29/01/2021 </strong>
                 </div>
-
-                <span className="time">18:17</span>
+                <div className="time">18:17</div>
               </div>
             </div>
             <div className="row">
