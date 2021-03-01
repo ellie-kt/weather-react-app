@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Weather from "./Weather";
 import "./Weather.css";
+import ReactAnimatedWeather from 'react-animated-weather'
 
 
 export default function Search(props) {
@@ -20,6 +21,7 @@ setWeatherdata({
   sunrise: new Date(response.data.sys.sunrise *1000),
   sunset: new Date (response.data.sys.sunset * 1000),
   city: response.data.name,
+  icon: response.data.weather[0].icon,
 });
 }
 

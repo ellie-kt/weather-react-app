@@ -1,7 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import SunriseSunset from "./SunriseSunset";
-import ReactAnimatedWeather from 'react-animated-weather';
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
 return (
@@ -69,22 +69,21 @@ return (
         <div className="units">
           <a href="/">°C </a> |<a href="/"> °F </a>
         </div>
-      </div>
-      <div className="col">
-        <div className="icon">
-          <ReactAnimatedWeather
-            icon="PARTLY_CLOUDY_DAY"
-            color="#555558"
-            size={100}
-            animate={true}
-          />
-        </div>
         <div className="elements">
+
           <ul>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
             <li>Wind: {Math.round(props.data.wind)}km/h</li>
           </ul>
-        </div>
+      </div>
+      </div>
+      <div className="col">
+        <div className="icon">
+          <div className="float-left">
+          <WeatherIcon code={props.data.icon}/>
+          </div>
+      </div>
+       
       </div>
     </div>
     </div>

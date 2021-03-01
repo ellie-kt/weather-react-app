@@ -73,12 +73,11 @@ li,
   list-style-type: none;
   color: #262627;
   font-size: 12px;
-  font-weight: bolder;
   text-align: center;
+  font-weight: bolder;
   position: relative;
-  top: 25px;
-  right: 5px;
-  padding: 0;
+  right: 6px;
+  padding-top: 5px;
 }
 
 .units {
