@@ -80,6 +80,7 @@ li {
 .elements {
   position: relative;
   top: 35px;
+  right: 10px;
 }
 
 .units {
