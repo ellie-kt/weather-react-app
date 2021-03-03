@@ -2,6 +2,7 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import SunriseSunset from "./SunriseSunset";
 import WeatherIcon from "./WeatherIcon";
+import WeatherUnits from "./WeatherUnits"
 
 export default function Weather(props) {
 return (
@@ -59,18 +60,9 @@ return (
           </div>
       <div className="col">
         <div className="chance">
-          <h4 className="text-capitalize">
-            {props.data.description} 
-           
-            <br />
-            <strong> {Math.round(props.data.temperature)}°C </strong>
-           </h4>
-        </div>
-        <div className="units">
-          <a href="/">°C </a> |<a href="/"> °F </a>
-        </div>
+          <WeatherUnits celcius={props.data.temperature} city={props.data.description}/>
+          </div>
         <div className="elements">
-
           <ul>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
             <li>Wind: {Math.round(props.data.wind)}km/h</li>
@@ -85,6 +77,7 @@ return (
       </div>
        
       </div>
+    
     </div>
     </div>
     </div>

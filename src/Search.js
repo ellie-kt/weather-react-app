@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Weather from "./Weather";
 import "./Weather.css";
-import ReactAnimatedWeather from 'react-animated-weather'
+
 
 
 export default function Search(props) {
