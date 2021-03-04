@@ -6,6 +6,12 @@
   max-width: 650px;
   font-family: "Poppins", sans-serif;
 }
+
+@media only screen and (max-width: 350px) {
+  [className="col"] {
+    width: 100%;
+  }
+}
 .btn-info {
   background: #f83a00a1;
   border-color: #d2d1d3;
