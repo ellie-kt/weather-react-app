@@ -38,6 +38,18 @@ function handleSubmit(event){
   search();
 }
 
+function geoSearch(event){
+   event.preventDefault();
+    function getCoords(position) {
+      let latitude = position.coords.latitude;
+      let longitude = position.coords.longitude;
+      let apiKey = `b318c179003d64fe70de737d79d84778`;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(handleResponse);
+    }
+    navigator.geolocation.getCurrentPosition(getCoords);
+  }
+
 function handleCityChange (event){
 setCity(event.target.value);
 
@@ -68,12 +80,8 @@ if (weatherData.ready) {
             />
           </div>
           <div className="col-2">
-            <input
-              type="submit"
-              id="current-location"
-              value="📍"
-              className="btn btn-info w-100"
-            />
+            <button className="btn btn-info w-100"
+            onClick={geoSearch}>📍</button>
           </div>
         </div>
       </form>
