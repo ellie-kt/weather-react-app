@@ -3,15 +3,10 @@
   border-radius: 10px;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 750px;
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (max-width: 350px) {
-  [className="col"] {
-    width: 100%;
-  }
-}
 .btn-info {
   background: #f83a00a1;
   border-color: #d2d1d3;
