@@ -65,8 +65,8 @@ return (
           </div>
         <div className="elements">
           <ul>
-            <li>Humidity: {Math.round(props.data.humidity)}%</li>
-            <li>Wind: {Math.round(props.data.wind)}km/h</li>
+            <li>Humidity: {Math.round(props.data.humidity)} %</li>
+            <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>
       </div>
       </div>
