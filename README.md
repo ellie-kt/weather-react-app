@@ -1,3 +1,11 @@
+React weather app created with SheCodes 
+
+<img width="799" height="547" alt="Screenshot 2025-10-15 at 16 38 44" src="https://github.com/user-attachments/assets/d8c14189-21a9-43c1-98b9-0a239fab9728" />
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
