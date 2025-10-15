@@ -36,5 +36,3 @@ git clone https://github.com/ellie-kt/weather-react-app.git
 cd weather-react-app
 
 Tip: This project runs best on Node 16 if you encounter any dependency issues.
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
